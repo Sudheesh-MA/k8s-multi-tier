@@ -5,7 +5,7 @@ pipeline {
     agent any
     
     environment {
-        imgtag="hemantkbajaj/rsvp:${env.BUILD_NUMBER}"
+        imgtag="wiprohpe/rsvp:${env.BUILD_NUMBER}"
     }   	    
     stages {
         stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
 	stage('Push') {
            steps {
                echo 'Pushing Image to Docker hub'
-	       sh("docker -H :5555 login -u hemantkbajaj -p don2rry")
+	       sh("docker -H :5555 login -u wiprohpe -p Wipro@123")
 	       sh("docker -H :5555 push ${imgtag}")	       
             }
         }
