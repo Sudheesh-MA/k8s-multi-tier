@@ -18,7 +18,7 @@ class BaseTest:
             assert doc.dict() == {
                 "_id": "1",
                 "name": "test name",
-                "mail": "test@example.com",
+                "email": "test@example.com",
                 "links": {
                     "self": "http://localhost/api/rsvps/1"
                 }
