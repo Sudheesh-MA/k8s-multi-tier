@@ -17,7 +17,7 @@ class BaseTest:
         with rsvp.app.test_request_context():
             assert doc.dict() == {
                 "_id": "1",
-                "name": "test name",
+                "name": "Wipro",
                 "email": "test@example.com",
                 "links": {
                     "self": "http://localhost/api/rsvps/1"
