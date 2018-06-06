@@ -17,7 +17,7 @@ class TestRSVP(BaseTest):
             assert doc.dict() == {
                 "_id": "1",
                 "name": "test name",
-                "email": "test@example.com",
+                "email": "shweta@example.com",
                 "links": {
                     "self": "http://localhost/api/rsvps/1"
                 }
